@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Grids, AdvObj, BaseGrid, AdvGrid, AdvPageControl, ComCtrls,
   StdCtrls, AdvEdit, AdvEdBtn, AdvCombo, AdvToolBar, AdvToolBarStylers,
-  ActnList, ImgList;
+  ActnList, ImgList, Menus, AdvMenus;
 
 type
   TfrmArticulosComplementarios = class(TForm)
@@ -24,11 +24,11 @@ type
     cbAlmacenable: TCheckBox;
     cbJuego: TCheckBox;
     cbPesarEnBascula: TCheckBox;
-    AdvEdit1: TAdvEdit;
-    AdvDockPanel1: TAdvDockPanel;
+    edtPesoUnit: TAdvEdit;
+    AdvDPAcciones: TAdvDockPanel;
     AdvToolBarOfficeStyler1: TAdvToolBarOfficeStyler;
-    AdvToolBar1: TAdvToolBar;
-    AdvToolBar2: TAdvToolBar;
+    ATBMenues: TAdvToolBar;
+    ATBBotones: TAdvToolBar;
     AdvToolBarMenuButton1: TAdvToolBarMenuButton;
     AdvToolBarMenuButton2: TAdvToolBarMenuButton;
     AdvToolBarMenuButton3: TAdvToolBarMenuButton;
@@ -44,13 +44,18 @@ type
     EliminarAlternativa: TAction;
     EliminarComplemento: TAction;
     ImgLstgrdArticulos: TImageList;
-    AdvToolBarButton1: TAdvToolBarButton;
+    ATBBGuardarCerrar: TAdvToolBarButton;
     imgMenus: TImageList;
-    AdvToolBarButton2: TAdvToolBarButton;
-    AdvToolBarSeparator1: TAdvToolBarSeparator;
-    AdvToolBarButton3: TAdvToolBarButton;
-    AdvToolBarButton4: TAdvToolBarButton;
-    AdvToolBarSeparator2: TAdvToolBarSeparator;
+    ATBBGuardarNuevo: TAdvToolBarButton;
+    ATBS1: TAdvToolBarSeparator;
+    ATBBModificar: TAdvToolBarButton;
+    ATBBEliminar: TAdvToolBarButton;
+    ATBS2: TAdvToolBarSeparator;
+    AdvToolBarButton1: TAdvToolBarButton;
+    AdvMainMenu1: TAdvMainMenu;
+    Archivo1: TMenuItem;
+    Nuevaalternativa1: TMenuItem;
+    Nuevocomplemento1: TMenuItem;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }

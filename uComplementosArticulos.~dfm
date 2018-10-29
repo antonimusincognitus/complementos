@@ -12,6 +12,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Font.Name = 'Arial Unicode MS'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 14
   object PGCArticulos: TAdvPageControl
@@ -238,7 +239,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Caption = 'Pesar en bascula'
         TabOrder = 7
       end
-      object AdvEdit1: TAdvEdit
+      object edtPesoUnit: TAdvEdit
         Left = 305
         Top = 73
         Width = 113
@@ -548,7 +549,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       end
     end
   end
-  object AdvDockPanel1: TAdvDockPanel
+  object AdvDPAcciones: TAdvDockPanel
     Left = 0
     Top = 0
     Width = 453
@@ -560,7 +561,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     ToolBarStyler = AdvToolBarOfficeStyler1
     UseRunTimeHeight = False
     Version = '6.0.4.5'
-    object AdvToolBar1: TAdvToolBar
+    object ATBMenues: TAdvToolBar
       Left = 3
       Top = 1
       Width = 447
@@ -640,10 +641,10 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Version = '6.0.4.5'
       end
     end
-    object AdvToolBar2: TAdvToolBar
+    object ATBBotones: TAdvToolBar
       Left = 3
       Top = 28
-      Width = 309
+      Width = 312
       Height = 28
       AllowFloating = True
       Caption = 'Untitled'
@@ -658,7 +659,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       ToolBarStyler = AdvToolBarOfficeStyler1
       ParentOptionPicture = True
       ToolBarIndex = -1
-      object AdvToolBarButton1: TAdvToolBarButton
+      object ATBBGuardarCerrar: TAdvToolBarButton
         Left = 9
         Top = 2
         Width = 110
@@ -680,12 +681,12 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         ShowCaption = True
         Version = '6.0.4.5'
       end
-      object AdvToolBarButton2: TAdvToolBarButton
+      object ATBBGuardarNuevo: TAdvToolBarButton
         Left = 119
         Top = 2
-        Width = 110
+        Width = 113
         Height = 24
-        Action = GuardarCerrar
+        Action = GuardarNuevo
         Appearance.CaptionFont.Charset = DEFAULT_CHARSET
         Appearance.CaptionFont.Color = clWindowText
         Appearance.CaptionFont.Height = -11
@@ -696,21 +697,21 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
-        ImageIndex = 6
+        ImageIndex = 7
         ParentFont = False
         Position = daTop
         ShowCaption = True
         Version = '6.0.4.5'
       end
       object AdvToolBarSeparator1: TAdvToolBarSeparator
-        Left = 229
+        Left = 232
         Top = 2
         Width = 9
         Height = 21
         LineColor = clBtnShadow
       end
-      object AdvToolBarButton3: TAdvToolBarButton
-        Left = 238
+      object ATBBModificar: TAdvToolBarButton
+        Left = 241
         Top = 2
         Width = 24
         Height = 24
@@ -730,8 +731,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Position = daTop
         Version = '6.0.4.5'
       end
-      object AdvToolBarButton4: TAdvToolBarButton
-        Left = 262
+      object ATBBEliminar: TAdvToolBarButton
+        Left = 265
         Top = 2
         Width = 24
         Height = 24
@@ -752,7 +753,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Version = '6.0.4.5'
       end
       object AdvToolBarSeparator2: TAdvToolBarSeparator
-        Left = 286
+        Left = 289
         Top = 2
         Width = 9
         Height = 21

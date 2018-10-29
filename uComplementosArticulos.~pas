@@ -24,11 +24,11 @@ type
     cbAlmacenable: TCheckBox;
     cbJuego: TCheckBox;
     cbPesarEnBascula: TCheckBox;
-    AdvEdit1: TAdvEdit;
-    AdvDockPanel1: TAdvDockPanel;
+    edtPesoUnit: TAdvEdit;
+    AdvDPAcciones: TAdvDockPanel;
     AdvToolBarOfficeStyler1: TAdvToolBarOfficeStyler;
-    AdvToolBar1: TAdvToolBar;
-    AdvToolBar2: TAdvToolBar;
+    ATBMenues: TAdvToolBar;
+    ATBBotones: TAdvToolBar;
     AdvToolBarMenuButton1: TAdvToolBarMenuButton;
     AdvToolBarMenuButton2: TAdvToolBarMenuButton;
     AdvToolBarMenuButton3: TAdvToolBarMenuButton;
@@ -44,17 +44,27 @@ type
     EliminarAlternativa: TAction;
     EliminarComplemento: TAction;
     ImgLstgrdArticulos: TImageList;
-    AdvToolBarButton1: TAdvToolBarButton;
+    ATBBGuardarCerrar: TAdvToolBarButton;
     imgMenus: TImageList;
-    AdvToolBarButton2: TAdvToolBarButton;
+    ATBBGuardarNuevo: TAdvToolBarButton;
     AdvToolBarSeparator1: TAdvToolBarSeparator;
-    AdvToolBarButton3: TAdvToolBarButton;
-    AdvToolBarButton4: TAdvToolBarButton;
+    ATBBModificar: TAdvToolBarButton;
+    ATBBEliminar: TAdvToolBarButton;
     AdvToolBarSeparator2: TAdvToolBarSeparator;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    dbNombre,   //  'Prueba_Diagonal';
+    dbUsuario,  //  '16ANTONIOG';
+    dbPass,     //  '123456';
+    cxTipo,     //  '1 local; 0 remoto';
+    cxNombre,   //  'Local,16Lumi, conexion, etc';
+    cxCarpeta,  //  ''C:\Microsip datos\';
+    cxServidor, //  '192.168.3.6; cualquiera que sea el servidor microsip';
+    cxProtocolo //  0: tcp/ip 1: net/bieu   2: spx
+    : string;
   end;
 
 var
@@ -63,5 +73,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmArticulosComplementarios.FormCreate(Sender: TObject);
+begin
+//.
+end;
 
 end.

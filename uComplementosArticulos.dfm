@@ -3,7 +3,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Top = 160
   BorderStyle = bsSingle
   Caption = 'Articulos complementarios'
-  ClientHeight = 311
+  ClientHeight = 291
   ClientWidth = 453
   Color = clBtnHighlight
   Font.Charset = DEFAULT_CHARSET
@@ -11,6 +11,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Font.Height = -11
   Font.Name = 'Arial Unicode MS'
   Font.Style = []
+  Menu = AdvMainMenu1
   OldCreateOrder = False
   OnCreate = FormCreate
   PixelsPerInch = 96
@@ -239,7 +240,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Caption = 'Pesar en bascula'
         TabOrder = 7
       end
-      object AdvEdit1: TAdvEdit
+      object edtPesoUnit: TAdvEdit
         Left = 305
         Top = 73
         Width = 113
@@ -549,7 +550,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       end
     end
   end
-  object AdvDockPanel1: TAdvDockPanel
+  object AdvDPAcciones: TAdvDockPanel
     Left = 0
     Top = 0
     Width = 453
@@ -561,7 +562,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     ToolBarStyler = AdvToolBarOfficeStyler1
     UseRunTimeHeight = False
     Version = '6.0.4.5'
-    object AdvToolBar1: TAdvToolBar
+    object ATBMenues: TAdvToolBar
       Left = 3
       Top = 1
       Width = 447
@@ -578,6 +579,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       TextAutoOptionMenu = 'Add or Remove Buttons'
       TextOptionMenu = 'Options'
       ToolBarStyler = AdvToolBarOfficeStyler1
+      Menu = AdvMainMenu1
       ParentOptionPicture = True
       ToolBarIndex = -1
       object AdvToolBarMenuButton1: TAdvToolBarMenuButton
@@ -641,10 +643,10 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Version = '6.0.4.5'
       end
     end
-    object AdvToolBar2: TAdvToolBar
+    object ATBBotones: TAdvToolBar
       Left = 3
       Top = 28
-      Width = 309
+      Width = 409
       Height = 28
       AllowFloating = True
       Caption = 'Untitled'
@@ -659,8 +661,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       ToolBarStyler = AdvToolBarOfficeStyler1
       ParentOptionPicture = True
       ToolBarIndex = -1
-      object AdvToolBarButton1: TAdvToolBarButton
-        Left = 9
+      object ATBBGuardarCerrar: TAdvToolBarButton
+        Left = 106
         Top = 2
         Width = 110
         Height = 24
@@ -681,12 +683,12 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         ShowCaption = True
         Version = '6.0.4.5'
       end
-      object AdvToolBarButton2: TAdvToolBarButton
-        Left = 119
+      object ATBBGuardarNuevo: TAdvToolBarButton
+        Left = 216
         Top = 2
-        Width = 110
+        Width = 113
         Height = 24
-        Action = GuardarCerrar
+        Action = GuardarNuevo
         Appearance.CaptionFont.Charset = DEFAULT_CHARSET
         Appearance.CaptionFont.Color = clWindowText
         Appearance.CaptionFont.Height = -11
@@ -697,21 +699,21 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
-        ImageIndex = 6
+        ImageIndex = 7
         ParentFont = False
         Position = daTop
         ShowCaption = True
         Version = '6.0.4.5'
       end
-      object AdvToolBarSeparator1: TAdvToolBarSeparator
-        Left = 229
+      object ATBS1: TAdvToolBarSeparator
+        Left = 329
         Top = 2
         Width = 9
         Height = 21
         LineColor = clBtnShadow
       end
-      object AdvToolBarButton3: TAdvToolBarButton
-        Left = 238
+      object ATBBModificar: TAdvToolBarButton
+        Left = 338
         Top = 2
         Width = 24
         Height = 24
@@ -731,8 +733,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Position = daTop
         Version = '6.0.4.5'
       end
-      object AdvToolBarButton4: TAdvToolBarButton
-        Left = 262
+      object ATBBEliminar: TAdvToolBarButton
+        Left = 362
         Top = 2
         Width = 24
         Height = 24
@@ -752,12 +754,33 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Position = daTop
         Version = '6.0.4.5'
       end
-      object AdvToolBarSeparator2: TAdvToolBarSeparator
-        Left = 286
+      object ATBS2: TAdvToolBarSeparator
+        Left = 386
         Top = 2
         Width = 9
         Height = 21
         LineColor = clBtnShadow
+      end
+      object AdvToolBarButton1: TAdvToolBarButton
+        Left = 9
+        Top = 2
+        Width = 97
+        Height = 24
+        Action = NuevaAlternativa
+        Appearance.CaptionFont.Charset = DEFAULT_CHARSET
+        Appearance.CaptionFont.Color = clWindowText
+        Appearance.CaptionFont.Height = -12
+        Appearance.CaptionFont.Name = 'Segoe UI'
+        Appearance.CaptionFont.Style = []
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Position = daTop
+        ShowCaption = True
+        Version = '6.0.4.5'
       end
     end
   end
@@ -2045,5 +2068,19 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       E00700001F080000F00F80010F80E000F00F800187E1F001FC3FC003E007F803
       FE7FE007E007FC07FE7FF81FF00FFE0F00000000000000000000000000000000
       000000000000}
+  end
+  object AdvMainMenu1: TAdvMainMenu
+    Version = '2.5.5.1'
+    Left = 424
+    Top = 32
+    object Archivo1: TMenuItem
+      Caption = '&Archivo'
+      object Nuevaalternativa1: TMenuItem
+        Action = NuevaAlternativa
+      end
+      object Nuevocomplemento1: TMenuItem
+        Action = NuevoComplemento
+      end
+    end
   end
 end

@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, Grids, AdvObj, BaseGrid, AdvGrid, AdvPageControl, ComCtrls,
   StdCtrls, AdvEdit, AdvEdBtn, AdvCombo, AdvToolBar, AdvToolBarStylers,
-  ActnList, ImgList;
+  ActnList, ImgList, Menus, AdvMenus, AdvStickyPopupMenu;
 
 type
   TfrmArticulosComplementarios = class(TForm)
@@ -47,10 +47,15 @@ type
     ATBBGuardarCerrar: TAdvToolBarButton;
     imgMenus: TImageList;
     ATBBGuardarNuevo: TAdvToolBarButton;
-    AdvToolBarSeparator1: TAdvToolBarSeparator;
+    ATBS1: TAdvToolBarSeparator;
     ATBBModificar: TAdvToolBarButton;
     ATBBEliminar: TAdvToolBarButton;
-    AdvToolBarSeparator2: TAdvToolBarSeparator;
+    ATBS2: TAdvToolBarSeparator;
+    AdvToolBarButton1: TAdvToolBarButton;
+    AdvStickyPopupMenu1: TAdvStickyPopupMenu;
+    AdvPopupMenu1: TAdvPopupMenu;
+    Nuevaalternativa1: TMenuItem;
+    Nuevocomplemento1: TMenuItem;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }

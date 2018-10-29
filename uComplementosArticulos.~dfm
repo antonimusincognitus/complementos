@@ -590,6 +590,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Appearance.CaptionFont.Height = -11
         Appearance.CaptionFont.Name = 'Segoe UI'
         Appearance.CaptionFont.Style = []
+        DropDownMenu = AdvPopupMenu1
         Caption = '&Archivo'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -644,7 +645,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     object ATBBotones: TAdvToolBar
       Left = 3
       Top = 28
-      Width = 312
+      Width = 409
       Height = 28
       AllowFloating = True
       Caption = 'Untitled'
@@ -660,7 +661,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       ParentOptionPicture = True
       ToolBarIndex = -1
       object ATBBGuardarCerrar: TAdvToolBarButton
-        Left = 9
+        Left = 106
         Top = 2
         Width = 110
         Height = 24
@@ -682,7 +683,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Version = '6.0.4.5'
       end
       object ATBBGuardarNuevo: TAdvToolBarButton
-        Left = 119
+        Left = 216
         Top = 2
         Width = 113
         Height = 24
@@ -703,15 +704,15 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         ShowCaption = True
         Version = '6.0.4.5'
       end
-      object AdvToolBarSeparator1: TAdvToolBarSeparator
-        Left = 232
+      object ATBS1: TAdvToolBarSeparator
+        Left = 329
         Top = 2
         Width = 9
         Height = 21
         LineColor = clBtnShadow
       end
       object ATBBModificar: TAdvToolBarButton
-        Left = 241
+        Left = 338
         Top = 2
         Width = 24
         Height = 24
@@ -732,7 +733,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Version = '6.0.4.5'
       end
       object ATBBEliminar: TAdvToolBarButton
-        Left = 265
+        Left = 362
         Top = 2
         Width = 24
         Height = 24
@@ -752,12 +753,33 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Position = daTop
         Version = '6.0.4.5'
       end
-      object AdvToolBarSeparator2: TAdvToolBarSeparator
-        Left = 289
+      object ATBS2: TAdvToolBarSeparator
+        Left = 386
         Top = 2
         Width = 9
         Height = 21
         LineColor = clBtnShadow
+      end
+      object AdvToolBarButton1: TAdvToolBarButton
+        Left = 9
+        Top = 2
+        Width = 97
+        Height = 24
+        Action = NuevaAlternativa
+        Appearance.CaptionFont.Charset = DEFAULT_CHARSET
+        Appearance.CaptionFont.Color = clWindowText
+        Appearance.CaptionFont.Height = -12
+        Appearance.CaptionFont.Name = 'Segoe UI'
+        Appearance.CaptionFont.Style = []
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -11
+        Font.Name = 'Tahoma'
+        Font.Style = []
+        ParentFont = False
+        Position = daTop
+        ShowCaption = True
+        Version = '6.0.4.5'
       end
     end
   end
@@ -2045,5 +2067,23 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       E00700001F080000F00F80010F80E000F00F800187E1F001FC3FC003E007F803
       FE7FE007E007FC07FE7FF81FF00FFE0F00000000000000000000000000000000
       000000000000}
+  end
+  object AdvStickyPopupMenu1: TAdvStickyPopupMenu
+    ButtonBar = <>
+    MenuItems = <>
+    Version = '1.6.0.0'
+    Left = 424
+    Top = 48
+  end
+  object AdvPopupMenu1: TAdvPopupMenu
+    Version = '2.5.5.1'
+    Left = 168
+    Top = 8
+    object Nuevaalternativa1: TMenuItem
+      Action = NuevaAlternativa
+    end
+    object Nuevocomplemento1: TMenuItem
+      Action = NuevoComplemento
+    end
   end
 end

@@ -45,6 +45,12 @@ type
     EliminarComplemento: TAction;
     ImgLstgrdArticulos: TImageList;
     AdvToolBarButton1: TAdvToolBarButton;
+    imgMenus: TImageList;
+    AdvToolBarButton2: TAdvToolBarButton;
+    AdvToolBarSeparator1: TAdvToolBarSeparator;
+    AdvToolBarButton3: TAdvToolBarButton;
+    AdvToolBarButton4: TAdvToolBarButton;
+    AdvToolBarSeparator2: TAdvToolBarSeparator;
   private
     { Private declarations }
   public

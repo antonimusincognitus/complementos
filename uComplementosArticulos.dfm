@@ -3,8 +3,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Top = 160
   BorderStyle = bsSingle
   Caption = 'Articulos complementarios'
-  ClientHeight = 333
-  ClientWidth = 485
+  ClientHeight = 311
+  ClientWidth = 453
   Color = clBtnHighlight
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,13 +12,14 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Font.Name = 'Arial Unicode MS'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
-  TextHeight = 15
+  TextHeight = 14
   object PGCArticulos: TAdvPageControl
     Left = 7
-    Top = 59
-    Width = 473
-    Height = 270
+    Top = 55
+    Width = 441
+    Height = 252
     ActivePage = tabGeneral
     ActiveFont.Charset = DEFAULT_CHARSET
     ActiveFont.Color = clWindowText
@@ -29,7 +30,9 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     TabBackGroundColor = clBtnHighlight
     TabMargin.RightMargin = 0
     TabOverlap = 0
-    Version = '1.7.1.0'
+    Version = '2.0.0.4'
+    PersistPagesState.Location = plRegistry
+    PersistPagesState.Enabled = False
     TabOrder = 0
     object tabGeneral: TAdvTabSheet
       Caption = 'General'
@@ -38,19 +41,20 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       TabColor = clBtnFace
       TabColorTo = clNone
       object cbxLineas: TAdvComboBox
-        Left = 64
-        Top = 78
-        Width = 145
-        Height = 23
+        Left = 60
+        Top = 73
+        Width = 135
+        Height = 22
         Color = clBtnHighlight
-        Version = '1.3.2.2'
+        Version = '1.5.1.1'
         Visible = True
         Flat = True
+        EmptyTextStyle = []
         Ctl3D = False
         DropWidth = 0
         Enabled = True
         ItemIndex = -1
-        ItemHeight = 15
+        ItemHeight = 14
         LabelCaption = 'Linea:      '
         LabelPosition = lpLeftCenter
         LabelFont.Charset = DEFAULT_CHARSET
@@ -63,19 +67,20 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Text = 'Lineas'
       end
       object cbxUnidadMedida: TAdvComboBox
-        Left = 64
-        Top = 111
-        Width = 145
-        Height = 23
+        Left = 60
+        Top = 104
+        Width = 135
+        Height = 22
         Color = clBtnHighlight
-        Version = '1.3.2.2'
+        Version = '1.5.1.1'
         Visible = True
         Flat = True
+        EmptyTextStyle = []
         Ctl3D = False
         DropWidth = 0
         Enabled = True
         ItemIndex = -1
-        ItemHeight = 15
+        ItemHeight = 14
         LabelCaption = 'Unidades:'
         LabelPosition = lpLeftCenter
         LabelFont.Charset = DEFAULT_CHARSET
@@ -88,19 +93,20 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Text = 'Unidades de medida'
       end
       object cbxEstatus: TAdvComboBox
-        Left = 317
-        Top = 111
-        Width = 135
-        Height = 23
+        Left = 296
+        Top = 104
+        Width = 126
+        Height = 22
         Color = clBtnHighlight
-        Version = '1.3.2.2'
+        Version = '1.5.1.1'
         Visible = True
         Flat = True
+        EmptyTextStyle = []
         Ctl3D = False
         DropWidth = 0
         Enabled = True
         ItemIndex = -1
-        ItemHeight = 15
+        ItemHeight = 14
         LabelCaption = 'Estatus:  '
         LabelPosition = lpLeftCenter
         LabelFont.Charset = DEFAULT_CHARSET
@@ -113,10 +119,11 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Text = 'Estatus'
       end
       object edtNombre: TAdvEditBtn
-        Left = 64
-        Top = 45
-        Width = 145
+        Left = 60
+        Top = 42
+        Width = 135
         Height = 21
+        EmptyTextStyle = []
         Flat = True
         FocusColor = clBtnHighlight
         LabelCaption = 'Nombre:  '
@@ -126,15 +133,19 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         LabelFont.Height = -11
         LabelFont.Name = 'MS Sans Serif'
         LabelFont.Style = []
+        Lookup.Font.Charset = DEFAULT_CHARSET
+        Lookup.Font.Color = clWindowText
+        Lookup.Font.Height = -11
+        Lookup.Font.Name = 'Arial'
+        Lookup.Font.Style = []
         Lookup.Separator = ';'
         BorderStyle = bsNone
         Color = clBtnHighlight
-        Enabled = True
         ReadOnly = False
         TabOrder = 3
         Text = 'Nombre'
         Visible = True
-        Version = '1.3.2.8'
+        Version = '1.3.5.0'
         ButtonStyle = bsButton
         ButtonWidth = 16
         Etched = False
@@ -167,10 +178,11 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
           FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00}
       end
       object edtClave: TAdvEditBtn
-        Left = 64
-        Top = 13
-        Width = 145
+        Left = 60
+        Top = 12
+        Width = 135
         Height = 21
+        EmptyTextStyle = []
         Flat = True
         FocusColor = clBtnHighlight
         LabelCaption = 'Clave:     '
@@ -180,15 +192,19 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         LabelFont.Height = -11
         LabelFont.Name = 'MS Sans Serif'
         LabelFont.Style = []
+        Lookup.Font.Charset = DEFAULT_CHARSET
+        Lookup.Font.Color = clWindowText
+        Lookup.Font.Height = -11
+        Lookup.Font.Name = 'Arial'
+        Lookup.Font.Style = []
         Lookup.Separator = ';'
         BorderStyle = bsNone
         Color = clBtnHighlight
-        Enabled = True
         ReadOnly = False
         TabOrder = 4
         Text = 'Clave Principal'
         Visible = True
-        Version = '1.3.2.8'
+        Version = '1.3.5.0'
         ButtonStyle = bsButton
         ButtonWidth = 16
         Etched = False
@@ -200,34 +216,35 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
           0000000000000000000000000000000000000000000000000000}
       end
       object cbAlmacenable: TCheckBox
-        Left = 272
-        Top = 16
-        Width = 97
-        Height = 17
+        Left = 254
+        Top = 15
+        Width = 90
+        Height = 16
         Caption = 'Almacenable'
         TabOrder = 5
       end
       object cbJuego: TCheckBox
-        Left = 272
-        Top = 35
-        Width = 95
-        Height = 17
+        Left = 254
+        Top = 33
+        Width = 89
+        Height = 16
         Caption = 'Juego (Kit)'
         TabOrder = 6
       end
       object cbPesarEnBascula: TCheckBox
-        Left = 273
-        Top = 55
-        Width = 112
-        Height = 17
+        Left = 255
+        Top = 51
+        Width = 104
+        Height = 16
         Caption = 'Pesar en bascula'
         TabOrder = 7
       end
       object AdvEdit1: TAdvEdit
-        Left = 327
-        Top = 78
-        Width = 121
+        Left = 305
+        Top = 73
+        Width = 113
         Height = 21
+        EmptyTextStyle = []
         Flat = True
         FocusColor = clBtnHighlight
         LabelCaption = 'Peso unit:   '
@@ -237,20 +254,24 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         LabelFont.Height = -11
         LabelFont.Name = 'Arial Unicode MS'
         LabelFont.Style = []
+        Lookup.Font.Charset = DEFAULT_CHARSET
+        Lookup.Font.Color = clWindowText
+        Lookup.Font.Height = -11
+        Lookup.Font.Name = 'Arial'
+        Lookup.Font.Style = []
         Lookup.Separator = ';'
         BorderStyle = bsNone
         Color = clBtnHighlight
-        Enabled = True
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Arial Unicode MS'
         Font.Style = []
         ParentFont = False
         TabOrder = 8
         Text = '0.000'
         Visible = True
-        Version = '2.9.0.0'
+        Version = '3.3.2.8'
       end
     end
     object tabAlternativas: TAdvTabSheet
@@ -262,15 +283,15 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       object sstrgAlternativas: TAdvStringGrid
         Left = 5
         Top = 2
-        Width = 449
-        Height = 235
+        Width = 419
+        Height = 219
         Cursor = crDefault
         ColCount = 3
         FixedCols = 0
         RowCount = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
@@ -278,6 +299,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         TabOrder = 0
         GridLineColor = 15527152
         GridFixedLineColor = 13947601
+        HoverRowCells = [hcNormal, hcSelected]
         ActiveCellFont.Charset = DEFAULT_CHARSET
         ActiveCellFont.Color = clWindowText
         ActiveCellFont.Height = -11
@@ -295,7 +317,6 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         ControlLook.FixedGradientHoverTo = 16775139
         ControlLook.FixedGradientHoverMirrorFrom = 16772541
         ControlLook.FixedGradientHoverMirrorTo = 16508855
-        ControlLook.FixedGradientHoverBorder = 12033927
         ControlLook.FixedGradientDownFrom = 16377020
         ControlLook.FixedGradientDownTo = 16377020
         ControlLook.FixedGradientDownMirrorFrom = 16242317
@@ -322,6 +343,14 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         FilterDropDown.Font.Name = 'MS Sans Serif'
         FilterDropDown.Font.Style = []
         FilterDropDownClear = '(All)'
+        FilterEdit.TypeNames.Strings = (
+          'Starts with'
+          'Ends with'
+          'Contains'
+          'Not contains'
+          'Equal'
+          'Not equal'
+          'Clear')
         FixedColWidth = 78
         FixedRowHeight = 22
         FixedFont.Charset = DEFAULT_CHARSET
@@ -330,6 +359,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         FixedFont.Name = 'Tahoma'
         FixedFont.Style = [fsBold]
         FloatFormat = '%.2f'
+        HoverButtons.Buttons = <>
+        HoverButtons.Position = hbLeftFromColumnLeft
         Look = glVista
         PrintSettings.DateFormat = 'dd/mm/yyyy'
         PrintSettings.Font.Charset = DEFAULT_CHARSET
@@ -367,11 +398,12 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         SearchFooter.HintFindPrev = 'Find previous occurrence'
         SearchFooter.HintHighlight = 'Highlight occurrences'
         SearchFooter.MatchCaseCaption = 'Match case'
+        SortSettings.DefaultFormat = ssAutomatic
         SortSettings.HeaderColor = 16579058
         SortSettings.HeaderColorTo = 16579058
         SortSettings.HeaderMirrorColor = 16380385
         SortSettings.HeaderMirrorColorTo = 16182488
-        Version = '5.8.0.2'
+        Version = '7.4.6.3'
         ColWidths = (
           78
           233
@@ -387,15 +419,15 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       object strgComplementos: TAdvStringGrid
         Left = 3
         Top = 2
-        Width = 461
-        Height = 238
+        Width = 430
+        Height = 222
         Cursor = crDefault
         ColCount = 4
         FixedCols = 0
         RowCount = 2
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         ParentFont = False
@@ -403,6 +435,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         TabOrder = 0
         GridLineColor = 15527152
         GridFixedLineColor = 13947601
+        HoverRowCells = [hcNormal, hcSelected]
         ActiveCellFont.Charset = DEFAULT_CHARSET
         ActiveCellFont.Color = clWindowText
         ActiveCellFont.Height = -11
@@ -421,7 +454,6 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         ControlLook.FixedGradientHoverTo = 16775139
         ControlLook.FixedGradientHoverMirrorFrom = 16772541
         ControlLook.FixedGradientHoverMirrorTo = 16508855
-        ControlLook.FixedGradientHoverBorder = 12033927
         ControlLook.FixedGradientDownFrom = 16377020
         ControlLook.FixedGradientDownTo = 16377020
         ControlLook.FixedGradientDownMirrorFrom = 16242317
@@ -448,6 +480,14 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         FilterDropDown.Font.Name = 'MS Sans Serif'
         FilterDropDown.Font.Style = []
         FilterDropDownClear = '(All)'
+        FilterEdit.TypeNames.Strings = (
+          'Starts with'
+          'Ends with'
+          'Contains'
+          'Not contains'
+          'Equal'
+          'Not equal'
+          'Clear')
         FixedColWidth = 78
         FixedRowHeight = 22
         FixedFont.Charset = DEFAULT_CHARSET
@@ -456,6 +496,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         FixedFont.Name = 'Tahoma'
         FixedFont.Style = [fsBold]
         FloatFormat = '%.2f'
+        HoverButtons.Buttons = <>
+        HoverButtons.Position = hbLeftFromColumnLeft
         Look = glVista
         PrintSettings.DateFormat = 'dd/mm/yyyy'
         PrintSettings.Font.Charset = DEFAULT_CHARSET
@@ -493,11 +535,12 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         SearchFooter.HintFindPrev = 'Find previous occurrence'
         SearchFooter.HintHighlight = 'Highlight occurrences'
         SearchFooter.MatchCaseCaption = 'Match case'
+        SortSettings.DefaultFormat = ssAutomatic
         SortSettings.HeaderColor = 16579058
         SortSettings.HeaderColorTo = 16579058
         SortSettings.HeaderMirrorColor = 16380385
         SortSettings.HeaderMirrorColorTo = 16182488
-        Version = '5.8.0.2'
+        Version = '7.4.6.3'
         ColWidths = (
           78
           204
@@ -509,7 +552,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   object AdvDockPanel1: TAdvDockPanel
     Left = 0
     Top = 0
-    Width = 485
+    Width = 453
     Height = 70
     MinimumSize = 3
     LockHeight = False
@@ -517,12 +560,12 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     Persistence.Enabled = False
     ToolBarStyler = AdvToolBarOfficeStyler1
     UseRunTimeHeight = False
-    Version = '5.2.2.0'
+    Version = '6.0.4.5'
     object AdvToolBar1: TAdvToolBar
       Left = 3
       Top = 1
-      Width = 479
-      Height = 26
+      Width = 447
+      Height = 24
       AllowFloating = True
       Caption = 'Untitled'
       CaptionFont.Charset = DEFAULT_CHARSET
@@ -550,12 +593,12 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Caption = '&Archivo'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         Position = daTop
         ShowCaption = True
-        Version = '5.2.2.0'
+        Version = '6.0.4.5'
       end
       object AdvToolBarMenuButton2: TAdvToolBarMenuButton
         Left = 58
@@ -570,17 +613,17 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Caption = '&Edici'#243'n'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         Position = daTop
         ShowCaption = True
-        Version = '5.2.2.0'
+        Version = '6.0.4.5'
       end
       object AdvToolBarMenuButton3: TAdvToolBarMenuButton
         Left = 105
         Top = 2
-        Width = 24
+        Width = 25
         Height = 23
         Appearance.CaptionFont.Charset = DEFAULT_CHARSET
         Appearance.CaptionFont.Color = clWindowText
@@ -590,18 +633,18 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Caption = '&Ver'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         Position = daTop
         ShowCaption = True
-        Version = '5.2.2.0'
+        Version = '6.0.4.5'
       end
     end
     object AdvToolBar2: TAdvToolBar
       Left = 3
       Top = 28
-      Width = 311
+      Width = 309
       Height = 28
       AllowFloating = True
       Caption = 'Untitled'
@@ -629,14 +672,14 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Appearance.CaptionFont.Style = []
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         ImageIndex = 6
         ParentFont = False
         Position = daTop
         ShowCaption = True
-        Version = '5.2.2.0'
+        Version = '6.0.4.5'
       end
       object AdvToolBarButton2: TAdvToolBarButton
         Left = 119
@@ -651,24 +694,24 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Appearance.CaptionFont.Style = []
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         ImageIndex = 6
         ParentFont = False
         Position = daTop
         ShowCaption = True
-        Version = '5.2.2.0'
+        Version = '6.0.4.5'
       end
       object AdvToolBarSeparator1: TAdvToolBarSeparator
         Left = 229
         Top = 2
-        Width = 10
-        Height = 23
+        Width = 9
+        Height = 21
         LineColor = clBtnShadow
       end
       object AdvToolBarButton3: TAdvToolBarButton
-        Left = 239
+        Left = 238
         Top = 2
         Width = 24
         Height = 24
@@ -680,16 +723,16 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Appearance.CaptionFont.Style = []
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         ImageIndex = 5
         ParentFont = False
         Position = daTop
-        Version = '5.2.2.0'
+        Version = '6.0.4.5'
       end
       object AdvToolBarButton4: TAdvToolBarButton
-        Left = 263
+        Left = 262
         Top = 2
         Width = 24
         Height = 24
@@ -701,24 +744,33 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Appearance.CaptionFont.Style = []
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
-        Font.Height = -11
+        Font.Height = -9
         Font.Name = 'Tahoma'
         Font.Style = []
         ImageIndex = 4
         ParentFont = False
         Position = daTop
-        Version = '5.2.2.0'
+        Version = '6.0.4.5'
       end
       object AdvToolBarSeparator2: TAdvToolBarSeparator
-        Left = 287
+        Left = 286
         Top = 2
-        Width = 10
-        Height = 23
+        Width = 9
+        Height = 21
         LineColor = clBtnShadow
       end
     end
   end
   object AdvToolBarOfficeStyler1: TAdvToolBarOfficeStyler
+    AppColor.AppButtonColor = 13005312
+    AppColor.AppButtonHoverColor = 16755772
+    AppColor.TextColor = clWhite
+    AppColor.HoverColor = 16246477
+    AppColor.HoverTextColor = clBlack
+    AppColor.HoverBorderColor = 15187578
+    AppColor.SelectedColor = 15187578
+    AppColor.SelectedTextColor = clBlack
+    AppColor.SelectedBorderColor = 15187578
     Style = bsCustom
     BorderColor = 14731181
     BorderColorHot = 14731181
@@ -833,6 +885,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     GlowButtonAppearance.GradientDown = ggVertical
     GlowButtonAppearance.GradientMirrorDown = ggVertical
     GlowButtonAppearance.GradientChecked = ggVertical
+    GroupAppearance.Background = clInfoBk
     GroupAppearance.BorderColor = 12763842
     GroupAppearance.Color = 16640730
     GroupAppearance.ColorTo = 15851212

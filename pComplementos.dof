@@ -100,7 +100,7 @@ Conditionals=
 DebugSourceDirs=
 UsePackages=0
 [Parameters]
-RunParams=
+RunParams=prueba_diagonal 16ANTONIOG 123456 1 loscal "c:\microsip datos\"
 HostApplication=
 Launcher=
 UseLauncher=0

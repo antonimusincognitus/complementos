@@ -51,10 +51,20 @@ type
     AdvToolBarButton3: TAdvToolBarButton;
     AdvToolBarButton4: TAdvToolBarButton;
     AdvToolBarSeparator2: TAdvToolBarSeparator;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
+    dbNombre,   //  'Prueba_Diagonal';
+    dbUsuario,  //  '16ANTONIOG';
+    dbPass,     //  '123456';
+    cxTipo,     //  '1 local; 0 remoto';
+    cxNombre,   //  'Local,16Lumi, conexion, etc';
+    cxCarpeta,  //  ''C:\Microsip datos\';
+    cxServidor, //  '192.168.3.6; cualquiera que sea el servidor microsip';
+    cxProtocolo //  0: tcp/ip 1: net/bieu   2: spx
+    : string;
   end;
 
 var
@@ -63,5 +73,10 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmArticulosComplementarios.FormCreate(Sender: TObject);
+begin
+//.
+end;
 
 end.

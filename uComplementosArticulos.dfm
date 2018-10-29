@@ -3,7 +3,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Top = 160
   BorderStyle = bsSingle
   Caption = 'Articulos complementarios'
-  ClientHeight = 291
+  ClientHeight = 311
   ClientWidth = 453
   Color = clBtnHighlight
   Font.Charset = DEFAULT_CHARSET
@@ -11,7 +11,6 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Font.Height = -11
   Font.Name = 'Arial Unicode MS'
   Font.Style = []
-  Menu = AdvMainMenu1
   OldCreateOrder = False
   OnCreate = FormCreate
   PixelsPerInch = 96
@@ -579,7 +578,6 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       TextAutoOptionMenu = 'Add or Remove Buttons'
       TextOptionMenu = 'Options'
       ToolBarStyler = AdvToolBarOfficeStyler1
-      Menu = AdvMainMenu1
       ParentOptionPicture = True
       ToolBarIndex = -1
       object AdvToolBarMenuButton1: TAdvToolBarMenuButton
@@ -592,6 +590,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Appearance.CaptionFont.Height = -11
         Appearance.CaptionFont.Name = 'Segoe UI'
         Appearance.CaptionFont.Style = []
+        DropDownMenu = AdvPopupMenu1
         Caption = '&Archivo'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -2069,18 +2068,22 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       FE7FE007E007FC07FE7FF81FF00FFE0F00000000000000000000000000000000
       000000000000}
   end
-  object AdvMainMenu1: TAdvMainMenu
-    Version = '2.5.5.1'
+  object AdvStickyPopupMenu1: TAdvStickyPopupMenu
+    ButtonBar = <>
+    MenuItems = <>
+    Version = '1.6.0.0'
     Left = 424
-    Top = 32
-    object Archivo1: TMenuItem
-      Caption = '&Archivo'
-      object Nuevaalternativa1: TMenuItem
-        Action = NuevaAlternativa
-      end
-      object Nuevocomplemento1: TMenuItem
-        Action = NuevoComplemento
-      end
+    Top = 48
+  end
+  object AdvPopupMenu1: TAdvPopupMenu
+    Version = '2.5.5.1'
+    Left = 168
+    Top = 8
+    object Nuevaalternativa1: TMenuItem
+      Action = NuevaAlternativa
+    end
+    object Nuevocomplemento1: TMenuItem
+      Action = NuevoComplemento
     end
   end
 end

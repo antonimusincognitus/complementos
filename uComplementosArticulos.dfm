@@ -20,7 +20,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     Top = 59
     Width = 473
     Height = 270
-    ActivePage = tabGeneral
+    ActivePage = tabAlternativas
     ActiveFont.Charset = DEFAULT_CHARSET
     ActiveFont.Color = clWindowText
     ActiveFont.Height = -11
@@ -281,13 +281,13 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       ColorTo = clNone
       TabColor = clBtnFace
       TabColorTo = clNone
-      object sstrgAlternativas: TAdvStringGrid
+      object strgAlternativas: TAdvStringGrid
         Left = 5
         Top = 2
         Width = 449
         Height = 235
         Cursor = crDefault
-        ColCount = 3
+        ColCount = 4
         FixedCols = 0
         RowCount = 2
         Font.Charset = DEFAULT_CHARSET
@@ -310,7 +310,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         ColumnHeaders.Strings = (
           'Clave'
           'Descripci'#243'n'
-          'Comentarios')
+          'Comentarios'
+          'Artiuclo_id_dest')
         ControlLook.FixedGradientMirrorFrom = 16447735
         ControlLook.FixedGradientMirrorTo = 16052977
         ControlLook.FixedGradientHoverFrom = 16775139
@@ -397,7 +398,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         ColWidths = (
           78
           233
-          131)
+          131
+          64)
       end
     end
     object tabComplementos: TAdvTabSheet

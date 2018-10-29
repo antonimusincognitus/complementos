@@ -14,7 +14,7 @@ type
     tabGeneral: TAdvTabSheet;
     tabAlternativas: TAdvTabSheet;
     tabComplementos: TAdvTabSheet;
-    sstrgAlternativas: TAdvStringGrid;
+    strgAlternativas: TAdvStringGrid;
     strgComplementos: TAdvStringGrid;
     cbxLineas: TAdvComboBox;
     cbxUnidadMedida: TAdvComboBox;
@@ -107,7 +107,7 @@ begin
   cxServidor :=ParamStr(6);//
   cxProtocolo:=ParamStr(7);//
   cxCarpeta  :=ParamStr(8);//
-  if not ConexionADB then ShowMessage('no se pudo conectar');
+  if ConexionADB then strgAlternativas.HideColumn(3);
 end;
 
 end.

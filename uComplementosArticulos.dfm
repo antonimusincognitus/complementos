@@ -12,6 +12,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Font.Name = 'Arial Unicode MS'
   Font.Style = []
   OldCreateOrder = False
+  OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 15
   object PGCArticulos: TAdvPageControl
@@ -39,8 +40,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       TabColorTo = clNone
       object cbxLineas: TAdvComboBox
         Left = 64
-        Top = 78
-        Width = 145
+        Top = 93
+        Width = 152
         Height = 23
         Color = clBtnHighlight
         Version = '1.3.2.2'
@@ -64,8 +65,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       end
       object cbxUnidadMedida: TAdvComboBox
         Left = 64
-        Top = 111
-        Width = 145
+        Top = 133
+        Width = 152
         Height = 23
         Color = clBtnHighlight
         Version = '1.3.2.2'
@@ -89,7 +90,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       end
       object cbxEstatus: TAdvComboBox
         Left = 317
-        Top = 111
+        Top = 133
         Width = 135
         Height = 23
         Color = clBtnHighlight
@@ -114,9 +115,9 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       end
       object edtNombre: TAdvEditBtn
         Left = 64
-        Top = 45
-        Width = 145
-        Height = 21
+        Top = 53
+        Width = 152
+        Height = 26
         Flat = True
         FocusColor = clBtnHighlight
         LabelCaption = 'Nombre:  '
@@ -136,7 +137,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Visible = True
         Version = '1.3.2.8'
         ButtonStyle = bsButton
-        ButtonWidth = 16
+        ButtonWidth = 18
         Etched = False
         Glyph.Data = {
           2E030000424D2E0300000000000036000000280000000D000000130000000100
@@ -169,8 +170,8 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       object edtClave: TAdvEditBtn
         Left = 64
         Top = 13
-        Width = 145
-        Height = 21
+        Width = 152
+        Height = 27
         Flat = True
         FocusColor = clBtnHighlight
         LabelCaption = 'Clave:     '
@@ -190,18 +191,39 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Visible = True
         Version = '1.3.2.8'
         ButtonStyle = bsButton
-        ButtonWidth = 16
+        ButtonWidth = 18
         Etched = False
         Glyph.Data = {
-          96000000424D9600000000000000360000002800000007000000040000000100
-          1800000000006000000000000000000000000000000000000000E1E1E1E1E1E1
-          E1E1E1000000E1E1E1E1E1E1E1E1E1000000E1E1E1E1E1E10000000000000000
-          00E1E1E1E1E1E1000000E1E1E1000000000000000000000000000000E1E1E100
-          0000000000000000000000000000000000000000000000000000}
+          2E030000424D2E0300000000000036000000280000000D000000130000000100
+          180000000000F802000000000000000000000000000000000000FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F1F1F1F1F1FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1F1F15C5C5C5C
+          5C5CF1F1F1FFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFF1F1
+          F15C5C5CADADADADADAD5C5C5CF1F1F1FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+          FFFFFFF1F1F15C5C5CADADADFFFFFFFFFFFFADADAD5C5C5CF1F1F1FFFFFFFFFF
+          FF00FFFFFFFFFFFFF1F1F15C5C5CADADADFFFFFFFFFFFFFFFFFFFFFFFFADADAD
+          5C5C5CF1F1F1FFFFFF00FFFFFFFFFFFFFFFFFFC9C9C9FFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFC9C9C9FFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00FFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00}
       end
       object cbAlmacenable: TCheckBox
         Left = 272
-        Top = 16
+        Top = 13
         Width = 97
         Height = 17
         Caption = 'Almacenable'
@@ -209,15 +231,15 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       end
       object cbJuego: TCheckBox
         Left = 272
-        Top = 35
+        Top = 37
         Width = 95
         Height = 17
         Caption = 'Juego (Kit)'
         TabOrder = 6
       end
       object cbPesarEnBascula: TCheckBox
-        Left = 273
-        Top = 55
+        Left = 272
+        Top = 62
         Width = 112
         Height = 17
         Caption = 'Pesar en bascula'
@@ -225,7 +247,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       end
       object AdvEdit1: TAdvEdit
         Left = 327
-        Top = 78
+        Top = 94
         Width = 121
         Height = 21
         Flat = True
@@ -601,7 +623,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     object AdvToolBar2: TAdvToolBar
       Left = 3
       Top = 28
-      Width = 311
+      Width = 314
       Height = 28
       AllowFloating = True
       Caption = 'Untitled'
@@ -619,9 +641,9 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
       object AdvToolBarButton1: TAdvToolBarButton
         Left = 9
         Top = 2
-        Width = 110
+        Width = 113
         Height = 24
-        Action = GuardarCerrar
+        Action = GuardarNuevo
         Appearance.CaptionFont.Charset = DEFAULT_CHARSET
         Appearance.CaptionFont.Color = clWindowText
         Appearance.CaptionFont.Height = -11
@@ -632,14 +654,14 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Font.Height = -11
         Font.Name = 'Tahoma'
         Font.Style = []
-        ImageIndex = 6
+        ImageIndex = 7
         ParentFont = False
         Position = daTop
         ShowCaption = True
         Version = '5.2.2.0'
       end
       object AdvToolBarButton2: TAdvToolBarButton
-        Left = 119
+        Left = 122
         Top = 2
         Width = 110
         Height = 24
@@ -661,14 +683,14 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Version = '5.2.2.0'
       end
       object AdvToolBarSeparator1: TAdvToolBarSeparator
-        Left = 229
+        Left = 232
         Top = 2
         Width = 10
         Height = 23
         LineColor = clBtnShadow
       end
       object AdvToolBarButton3: TAdvToolBarButton
-        Left = 239
+        Left = 242
         Top = 2
         Width = 24
         Height = 24
@@ -689,7 +711,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Version = '5.2.2.0'
       end
       object AdvToolBarButton4: TAdvToolBarButton
-        Left = 263
+        Left = 266
         Top = 2
         Width = 24
         Height = 24
@@ -710,7 +732,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
         Version = '5.2.2.0'
       end
       object AdvToolBarSeparator2: TAdvToolBarSeparator
-        Left = 287
+        Left = 290
         Top = 2
         Width = 10
         Height = 23

@@ -56,6 +56,8 @@ type
     AdvPopupMenu1: TAdvPopupMenu;
     Nuevaalternativa1: TMenuItem;
     Nuevocomplemento1: TMenuItem;
+    AdvMainMenu1: TAdvMainMenu;
+    Archivo1: TMenuItem;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }

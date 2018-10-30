@@ -3,7 +3,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Top = 160
   BorderStyle = bsSingle
   Caption = 'Articulos complementarios'
-  ClientHeight = 311
+  ClientHeight = 291
   ClientWidth = 453
   Color = clBtnHighlight
   Font.Charset = DEFAULT_CHARSET
@@ -11,6 +11,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
   Font.Height = -11
   Font.Name = 'Arial Unicode MS'
   Font.Style = []
+  Menu = AdvMainMenu1
   OldCreateOrder = False
   OnCreate = FormCreate
   PixelsPerInch = 96
@@ -20,7 +21,7 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     Top = 55
     Width = 441
     Height = 252
-    ActivePage = tabGeneral
+    ActivePage = tabAlternativas
     ActiveFont.Charset = DEFAULT_CHARSET
     ActiveFont.Color = clWindowText
     ActiveFont.Height = -11
@@ -2084,6 +2085,14 @@ object frmArticulosComplementarios: TfrmArticulosComplementarios
     end
     object Nuevocomplemento1: TMenuItem
       Action = NuevoComplemento
+    end
+  end
+  object AdvMainMenu1: TAdvMainMenu
+    Version = '2.5.5.1'
+    Left = 344
+    Top = 64
+    object Archivo1: TMenuItem
+      Caption = 'Archivo'
     end
   end
 end

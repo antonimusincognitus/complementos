@@ -5,3 +5,5 @@ pComplementos.exe
 *.exe
 pComplementos.exe
 *.~ddp
+*.~dpr
+*.exe
